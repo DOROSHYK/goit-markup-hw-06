@@ -948,26 +948,48 @@ textarea {
   outline: 1px solid red;
   margin-left: 40px;
   margin-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .modal-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 12px;
 
+  padding: 0;
   color: var(--main-color-titles-color);
-  padding-top: 40px;
-  padding-bottom: 12px;
+  outline: 1px solid red;
 }
 
 .form-label {
   display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
   font-family: inherit;
+  outline: 1px solid red;
+}
+
+.form-input {
+  margin-top: 4px;
+  margin-top: 4px;
+  padding: 10px;
+  border-radius: 4px;
+  background: #ffffff;
+
+  border-radius: 4px;
+}
+
+.text-area {
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
