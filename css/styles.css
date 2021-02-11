@@ -135,10 +135,6 @@ ul {
   background-color: var(--color-forces-color);
 }
 
-/* .item {
-  position: relative;
-} */
-
 .site-nav {
   padding-left: 0;
 }
@@ -722,13 +718,6 @@ ul {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-/* .portfolio-image:hover::before,
-.portfolio-image:focus::before {
-  transform: translateY(0);
-  opacity: 1;
-  background-color: rgba(33, 150, 243, 0.9);
-} */
-
 .examples-description {
   position: absolute;
   width: 100%;
@@ -881,6 +870,42 @@ footer .link.color {
   padding-bottom: 0;
 }
 
+.form-footer {
+  display: flex;
+  align-items: baseline;
+  padding-left: 92px;
+}
+
+.you-email {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--footer-background-color);
+}
+
+.button-subscribe-container {
+  display: inline;
+  margin-left: 12px;
+}
+
+.button-subscribe {
+  display: inline-block;
+  min-width: 200px;
+  min-height: 50px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white-bg-color);
+  background-color: var(--color-forces-color);
+  border-color: transparent;
+}
+
 /* backdrop and modal */
 
 .backdrop {
@@ -902,7 +927,6 @@ footer .link.color {
 .modal-hero {
   position: absolute;
   min-width: 528px;
-  height: 581px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -929,7 +953,7 @@ footer .link.color {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-hero:hover .modal-link {
+.modal-hero:focus-within .modal-link {
   transform: translateY(0px);
   fill: var(--color-forces-color);
 }
@@ -980,14 +1004,16 @@ textarea {
 .form-input {
   margin-top: 4px;
   padding: 10px;
+  padding-left: 30px;
   padding-left: 24px;
   border-radius: 4px;
   background: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.form-input:focus + .modal-svg {
-  fill: var(--color-forces-color);
+.form-input:focus-within {
+  border-color: var(--color-forces-color);
+  outline: none;
 }
 
 .modal-svg {
@@ -996,6 +1022,15 @@ textarea {
   top: 28px;
   width: 12px;
   height: 12px;
+}
+
+.modal-svg:focus {
+  fill: var(--color-forces-color);
+}
+
+.form-input:focus + .modal-svg {
+  fill: var(--color-forces-color);
+  border-color: var(--color-forces-color);
 }
 
 .reset {
@@ -1010,13 +1045,17 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.text-area:focus-within {
+  border-color: var(--color-forces-color);
+  outline: none;
+}
+
 .form-label-checkbox {
   position: relative;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
+  margin-bottom: 30px;
   margin: 0;
   padding: 0;
 }
@@ -1030,7 +1069,7 @@ textarea {
   justify-content: center;
 }
 
-.button-moda {
+.button-modal {
   color: var(--white-bg-color);
   background-color: var(--color-forces-color);
   font-family: inherit;
@@ -1040,4 +1079,11 @@ textarea {
   padding: 10px 55px;
   cursor: pointer;
   margin-top: 30px;
+}
+
+.button-modal:hover,
+.button-modal:focus {
+  border-color: #188ce8;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
