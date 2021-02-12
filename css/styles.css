@@ -1081,7 +1081,9 @@ textarea {
 
 .form-label-checkbox {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1124,6 +1126,7 @@ textarea {
 }
 
 .icon-ok-checbox {
+  margin-right: 8px;
   display: inline-block;
   border: 2px solid black;
   width: 16px;
