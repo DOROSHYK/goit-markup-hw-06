@@ -547,7 +547,14 @@
     <input class="you-email" type="text" name="email" placeholder="E-mail" id="you-email-subscribe">
     
     <div class="button-subscribe-container">
-          <button type="submit" class="button-subscribe">Подписаться</button>
+          <button type="submit" class="button-subscribe"><span class="subscribe-telegram">Подписаться
+            <svg class="subscribe-icon">
+                <use href="./img/symbol-defs.svg#icon-icon-telegram">
+            
+                </use>
+            </svg>
+            </span>
+          </button>
     </div>
 
 </form>
@@ -620,10 +627,14 @@
             </label>
             
             
-              <div class="form-label-checkbox">
-            <label  for="user-checbox"></label>
-                <input class="form-checkbox" type="checkbox" name="policy" id="user-checbox">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-              </div>
+              <!-- <div class="form-label-checkbox"> -->
+            <label class="form-label-checkbox">
+                <input class="form-checkbox" type="checkbox" name="policy">
+                <span class="icon-ok-checbox"></span>
+                Соглашаюсь с рассылкой и принимаю<a class="underline-policy" href=""> Условия договора</a>
+            
+            </label>
+            <!-- </div> -->
             
 
             <div class="button-box">

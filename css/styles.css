@@ -896,14 +896,41 @@ footer .link.color {
 
 .button-subscribe {
   display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
   min-width: 200px;
-  min-height: 50px;
+  height: 50px;
   text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   border-radius: 4px;
+  padding-top: 10px;
+
+  padding-bottom: 10px;
+  padding-left: 29px;
   color: var(--white-bg-color);
   background-color: var(--color-forces-color);
   border-color: transparent;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-subscribe:focus-within,
+.button-subscribe:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-telegram {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.subscribe-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 /* backdrop and modal */
@@ -1052,6 +1079,7 @@ textarea {
 
 .form-label-checkbox {
   position: relative;
+  display: block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1060,7 +1088,40 @@ textarea {
   padding: 0;
 }
 
+.underline-policy {
+  text-decoration-line: underline;
+  color: var(--color-forces-color);
+}
+
+/* .form-label-checkbox::after {
+  content: '';
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  outline: 1px solid blue;
+} */
+
 .form-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.form-checkbox:checked + .icon-ok-checbox {
+  background: var(--color-forces-color);
+  background-image: url(../img/icon-policu-ok/okpolicy.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-ok-checbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  background-image: url(../img/icon-policu-ok/border.svg);
 }
 
 .button-box {
