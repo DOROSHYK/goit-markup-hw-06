@@ -1096,6 +1096,7 @@ textarea {
 }
 
 .underline-policy {
+  padding-left: 3px;
   text-decoration-line: underline;
   color: var(--color-forces-color);
 }
