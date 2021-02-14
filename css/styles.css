@@ -113,10 +113,11 @@ ul {
   color: var(--massive-text-color);
 }
 
-.site-nav .link.current {
+/* буде модіфікатором */
+.site-nav .current {
   color: var(--color-forces-color);
 }
-
+/* буде модіфікатором */
 .active-line::after {
   position: absolute;
   content: '';
@@ -128,7 +129,7 @@ ul {
 
   background-color: var(--color-forces-color);
 }
-
+/* буде модіфікатором */
 .active-line-portf::after {
   position: absolute;
   content: '';
@@ -158,7 +159,7 @@ ul {
 .site-nav .to-logo {
   margin-left: 93px;
 }
-
+/* буде модіфікатором */
 .auto-margin {
   margin-left: auto;
 }
