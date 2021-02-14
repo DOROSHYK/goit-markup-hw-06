@@ -40,6 +40,12 @@ ul {
   position: relative;
 }
 
+.main-nav-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .container-margin {
   width: 1200px;
   margin-right: auto;
@@ -70,7 +76,7 @@ ul {
 
 /* logo*/
 
-.logo {
+.main-nav__logo {
   color: var(--color-forces-color);
 
   font-family: Raleway, sans-serif;
@@ -84,11 +90,11 @@ ul {
   font-style: normal;
 }
 
-.logo-black {
+.main-nav__logo-black {
   color: var(--main-color-titles-color);
 }
 
-.logo-white {
+.main-nav__logo-white {
   color: var(--white-bg-color);
 }
 
@@ -865,7 +871,7 @@ footer .link:focus {
   color: var(--color-forces-color);
 }
 
-footer .link.color {
+footer .color {
   color: var(--white-bg-color);
   padding-bottom: 0;
 }
